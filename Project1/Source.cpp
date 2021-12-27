@@ -80,6 +80,6 @@ int main()
 	{
 		int size = _msize(res) / sizeof(ElementCount<int>);
 		for (int i = 0; i < size; i++)
-			std::cout << res[i].element << "\t" << res[i].count << "\n";
+			std::cout << res[i].getElement() << "\t" << res[i].getCount() << "\n";
 	}
 }

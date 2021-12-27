@@ -1,11 +1,27 @@
 #pragma once
 
 template<typename T>
+class Array;
+
+template<typename T>
 class ElementCount
 {
-public:
+private:
 	T element;
 	int count;
+
+public:
+	inline T getElement() const
+	{
+		return this->element;
+	}
+
+	inline int getCount() const
+	{
+		return this->count;
+	}
+
+	friend class Array<T>;
 };
 
 template<typename T>
